@@ -561,5 +561,15 @@ a.pagination-item:hover {
 }
 
 img {
-	height: auto;
+  height: auto;
+}
+
+/* Tweak the default dark mode to ensure masthead and titles are legible. */
+@media (prefers-color-scheme: dark) {
+  .page-title, .post-title, .post-title a {
+    color: #E5E9EC;
+  }
+  .masthead-title a {
+    color: #B8C3CC;
+  }
 }
